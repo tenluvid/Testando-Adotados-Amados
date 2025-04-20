@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos Fêmeas</title>
+    <link rel="shortcut icon" href="../Mídia/Extras/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/animais.css">
+</head>
+<body class="fêmeas">
+    <header>
+        <a href="../index.html" class="logo"><img src="../Mídia/Extras/Logo_reserva.png" alt="Logo Adotados E Amados"></a>
+        <nav class="navbar">
+            <a href="../index.html">Início</a>
+            <a href="#">Quem Somos</a>
+            <a href="#">Como Ajudar</a>
+            <a href="#">Quero Adotar</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+
+    <section class="breadcrumb">
+        <p><a href="../index.html">Home</a> &gt; <span>Gatas Fêmeas</span></p>
+    </section>
+
+    <section class="text">
+        <h1>Conheca um novo amigo!</h1>
+        <p>Cada patinha tem uma história, e o final feliz pode começar com você! <br> Conheça nossos peludinhos à espera de um lar.</p>
+    </section>
+
+    <main>
+        <section class="animal-adoption">
+            <div class="animal-card" onclick="AbrirModal('Ariel', '50 dias', 'Vermifugada', '', '', '../Mídia/Gatos/Fêmeas/Ariel 1.jpg')">
+            
+                <img src="../Mídia/Gatos/Fêmeas/Ariel 1.jpg" alt="">
+                <h3>ARIEL</h3>
+            </div>
+
+            <div class="animal-card" onclick="AbrirModal('Fênix', '3 meses', 'Vermifugada', '', '', '../Mídia/Gatos/Fêmeas/FÊnix 1.jpg')">
+            
+                <img src="../Mídia/Gatos/Fêmeas/FÊnix 1.jpg" alt="">
+                <h3>FÊNIX</h3>
+            </div>
+
+            <div class="animal-card" onclick="AbrirModal('Lua', '3 meses', 'Vermifugada', '', '', '../Mídia/Gatos/Fêmeas/Lua 1.jpg')">
+            
+                <img src="../Mídia/Gatos/Fêmeas/Lua 1.jpg" alt="">
+                <h3>LUA</h3>
+            </div>
+
+            <div class="animal-card" onclick="AbrirModal('Luci', '1 ano', 'Castrada', '', '', '../Mídia/Gatos/Fêmeas/Luci 1.jpg')">
+            
+                <img src="../Mídia/Gatos/Fêmeas/Luci 1.jpg" alt="">
+                <h3>LUCI</h3>
+            </div>
+
+            <div class="animal-card" onclick="AbrirModal('Milla', '1 ano', 'Castrada', '', '', '../Mídia/Gatos/Fêmeas/Milla 1.jpg')">
+            
+                <img src="../Mídia/Gatos/Fêmeas/Milla 1.jpg" alt="">
+                <h3>MILLA</h3>
+            </div>
+
+            <div class="animal-card" onclick="AbrirModal('Sky', '2 meses', 'Vermifugada', '', '', '../Mídia/Gatos/Fêmeas/Sky 1.jpg')">
+            
+                <img src="../Mídia/Gatos/Fêmeas/Sky 1.jpg" alt="">
+                <h3>SKY</h3>
+            </div>
+
+        </section>
+
+        <div class="button">
+            <button >QUERO ADOTAR</button>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="fecharModal()">&times;</span>
+          <img id="modal-img" src="" alt="">
+
+          <div class="modal-info">
+              <h2 id="modal-nome"></h2>
+              <p><strong>Idade:</strong> <span id="modal-idade"></span></p>
+              <p><strong><span id="modal-status"></span></strong></p>
+              <p id="modal-historia"></p>
+              <h5 id="modal-modo"></h5>
+
+              <button class="adopt-button" onclick="window.location.href='#'">QUERO ADOTAR</button>
+          </div>
+        </div>
+      </div>
+
+      <script src="../javascript/animais-script.js"></script>
+
+      <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+            <h3>Sobre Nós</h3>
+            <p>Somos uma organização, formada por protetores indepentes, dedicada à adoção de animais, proporcionando um lar amoroso para cães e gatos.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Menu</h3>
+                <ul class="footer-menu">
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Como Ajudar</a></li>
+                    <li><a href="#">Quero Adotar</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Onde nos encontrar</h3>
+                <div class="social-contact">
+                    <a href="https://www.instagram.com/adotadoseamados/" class="social-contact-item" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> @adotadoseamados
+                    </a>
+                    <a href="https://www.instagram.com/adotadosentrevista/" class="social-contact-item" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> @adotadosentrevista
+                    </a>
+                    <a href="https://www.facebook.com/adotadoseamados.com.br/about?locale=pt_BR" class="social-contact-item" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i> /Adotados e Amados
+                    </a>
+                    <a href="https://www.google.com/maps/place/Pra%C3%A7a+Benedito+Calixto+-+Pinheiros,+S%C3%A3o+Paulo+-+SP,+05406-040/data=!4m2!3m1!1s0x94ce579b48152a2f:0xa2d40f47dd19990f?sa=X&ved=1t:242&ictx=111" class="social-contact-item" target="_blank">
+                        <i class="fa-solid fa-location-dot"></i> Praça Benedito Calixto, Pinheiros, São Paulo
+                    </a>
+                </div>
+            </div>
+        </div>  
+    <div class="footer-bottom">
+        <a href="https://hderysite.github.io/Adotados-Amados/"><img src="../Mídia/Extras/Logo_branca.png" alt="Logo Adotados E Amados"></a>
+        <p>Todos os direitos reservados</p>
+    </div>     
+</footer>
+</body>
+</html>
