@@ -408,6 +408,9 @@ header {
 
     .menu-toggle {
         display: block;
+        font-size: 2rem;
+        color: #6A1B9A;
+        cursor: pointer;
     }
 
     .navbar {
@@ -420,6 +423,7 @@ header {
         width: 100%;
         padding: 1rem 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 9; /* Garantir que o menu fique acima do conteúdo */
     }
 
     .navbar a {
@@ -427,8 +431,14 @@ header {
         text-align: center;
         width: 100%;
         border-top: 1px solid #eee;
+        transition: background-color 0.3s ease;
     }
 
+    .navbar a:hover {
+        background-color: #F8A836; /* Dá efeito de hover ao link */
+    }
+
+    /* Quando o menu estiver ativo, exibe ele */
     .navbar.active {
         display: flex;
     }
