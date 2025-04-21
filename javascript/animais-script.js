@@ -14,3 +14,10 @@ function AbrirModal(nome, idade, status, historia, modo, imagem) {
 function fecharModal() {
     document.getElementById('modal').style.display = 'none';
 }
+
+const toggle = document.getElementById('menu-toggle');
+        const navbar = document.querySelector('.navbar');
+    
+        toggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
