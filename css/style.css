@@ -463,3 +463,14 @@ header {
 .footer .footer-bottom img{
     max-width: 90px;
 }
+
+@media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    .image-card {
+      width: 100%;
+      height: auto;
+    }
+}

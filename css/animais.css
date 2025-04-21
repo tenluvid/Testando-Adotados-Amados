@@ -393,3 +393,19 @@ header {
 .footer .footer-bottom img{
     max-width: 90px;
 }
+
+@media (max-width: 1024px) {
+    .animal-adoption {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+  
+  @media (max-width: 600px) {
+    .animal-adoption {
+        grid-template-columns: 1fr;
+    }
+  
+    .modal-content {
+        flex-direction: column;
+    }
+}
