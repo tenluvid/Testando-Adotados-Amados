@@ -11,18 +11,16 @@
 <body class="machos">
     <header>
 
-        <div class="menu-toggle" id="menu-toggle">
-            &#9776; <!-- símbolo do menu hamburguer -->
+        <div class="topnav" id="navbar">
+            <a href="../index.html" class="logo"><img src="../Mídia/Extras/Logo_reserva.png" alt="Logo Adotados E Amados"></a>
+            <nav class="navbar">
+                <a href="../index.html">Início</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Como Ajudar</a>
+                <a href="#">Quero Adotar</a>
+                <a href="#">Contatos</a>
+            </nav>
         </div>
-
-        <a href="../index.html" class="logo"><img src="../Mídia/Extras/Logo_reserva.png" alt="Logo Adotados E Amados"></a>
-        <nav class="navbar">
-            <a href="../index.html">Início</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Como Ajudar</a>
-            <a href="#">Quero Adotar</a>
-            <a href="#">Contatos</a>
-        </nav>
     </header>
 
     <section class="breadcrumb">
@@ -101,24 +99,6 @@
           </div>
         </div>
       </div>
-
-      function AbrirModal(nome, idade, status, historia, modo, imagem) {
-
-        document.getElementById('modal-nome').textContent = nome;
-        document.getElementById('modal-idade').textContent = idade;
-        document.getElementById('modal-status').textContent = status;
-        document.getElementById('modal-historia').textContent = historia;
-        document.getElementById('modal-modo').textContent = modo;
-        document.getElementById('modal-img').src = imagem;
-        document.getElementById('modal-img').alt = nome;
-    
-        document.getElementById('modal').style.display = 'flex';
-    }
-    
-    function fecharModal() {
-        document.getElementById('modal').style.display = 'none';
-    }
-
 
       <script src="../javascript/animais-script.js"></script>
 

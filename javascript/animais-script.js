@@ -15,9 +15,13 @@ function fecharModal() {
     document.getElementById('modal').style.display = 'none';
 }
 
-const toggle = document.getElementById('menu-toggle');
-const navbar = document.querySelector('.navbar');
+console.log("Adotados site loaded");
 
-toggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-});
+  function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+}

@@ -59,14 +59,14 @@ header {
     transform: scale(1.05);
 }
 
-.navbar {
+.topnav .navbar {
     display: flex;
     gap: 1.5rem;
     align-items: center;
     height: 100%;
 }
 
-.navbar a {
+.topnav .navbar a {
     text-decoration: none;
     color: #6A1B9A;
     font-weight: 600;
@@ -76,11 +76,11 @@ header {
     transition: all 0.3s ease;
 }
 
-.navbar a:hover {
+.topnav .navbar a:hover {
     color: #F8A836;
 }
 
-.navbar a::after {
+.topnav .navbar a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -91,7 +91,7 @@ header {
     transition: width 0.3s ease;
 }
 
-.navbar a:hover::after {
+.topnav .navbar a:hover::after {
     width: 100%;
 }
 
@@ -394,52 +394,42 @@ header {
     max-width: 90px;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    color: #6A1B9A;
-    cursor: pointer;
-}
-
 @media (max-width: 700px) {
     .animal-adoption {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        color: #6A1B9A;
-        cursor: pointer;
-    }
-
-    .navbar {
+    .topnav a:not(:first-child) {
         display: none;
-        flex-direction: column;
-        background-color: #fff;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
         position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        padding: 1rem 0;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        z-index: 9; /* Garantir que o menu fique acima do conteúdo */
+        right: 0;
+        top: 0;
     }
 
-    .navbar a {
-        padding: 1rem;
-        text-align: center;
-        width: 100%;
-        border-top: 1px solid #eee;
-        transition: background-color 0.3s ease;
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 
-    .navbar a:hover {
-        background-color: #F8A836; /* Dá efeito de hover ao link */
+    h1 {
+        font-size: 2.5rem;
     }
 
-    /* Quando o menu estiver ativo, exibe ele */
-    .navbar.active {
-        display: flex;
+    h2 {
+        font-size: 1.8rem;
     }
 }
+
