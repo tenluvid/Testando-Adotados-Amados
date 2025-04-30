@@ -496,7 +496,7 @@ header {
 
 .footer-mobile p {
     font-size: 14px;
-    margin-top: 10px;
+    margin: 0px;
 }
 
 @media (max-width: 768px) {
