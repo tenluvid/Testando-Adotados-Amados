@@ -101,6 +101,11 @@ header {
     justify-content: center;
 }
 
+.welcome, .textabout {
+    padding: 0 1rem;
+}
+
+
 .welcome p{
     text-align: justify;
 }
@@ -112,11 +117,19 @@ header {
     align-items: center;
 }
 
+/*
 .imagem_png img{
     max-width: 100%;
     height: auto;
     filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.5));
 }
+*/
+
+.imagem_png img {
+    width: 100%;
+    max-width: 400px;
+}
+
 
 .home {
     display: flex;
@@ -517,4 +530,88 @@ header {
         display: block;
     }
 
+}
+
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome {
+        padding: 20px;
+    }
+
+    .imagem_png {
+        margin-top: 20px;
+    }
+
+    .navbar {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 10px;
+    }
+
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .image-card img {
+        height: auto;
+    }
+
+    .pawas_dogs h1, .pawas_dogs h3, .pawas_cats h3 {
+        font-size: 1.8rem;
+    }
+
+    .title_cards h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 20px 16px;
+    }
+
+    .caption h3 {
+        font-size: 1.2rem;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+
+    .whoweare .title h1,
+    .pawas_dogs h1,
+    .title_cards h1 {
+        font-size: 1.8rem;
+    }
 }
