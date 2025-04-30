@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    toggleButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
+
 <body>
 
     <header>
@@ -140,8 +149,6 @@
         </section>
           
     </section>
-
-    <script src="../javascript/menu-script.js"></script>
 
     <footer class="footer">
         <div class="footer-container">
