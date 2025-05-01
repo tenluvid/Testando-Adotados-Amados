@@ -514,33 +514,31 @@ header {
 
 @media (max-width: 768px) {
     header {
-        position: fixed; /* Mantém o header fixo no topo */
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000; /* Garante que fique acima do menu */
+        z-index: 1000;
         background: white;
-        padding: 10px 20px;
+        padding: 15px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .logo {
-        margin-left: 10px; /* Mantém a logo no lado esquerdo */
+        margin-left: 10px; 
     }
 
     .menu-toggle {
         display: block;
-        font-size: 30px;
+        font-size: 40px;
         background: none;
         border: none;
         color: #6A1B9A;
         cursor: pointer;
-        position: fixed;
-        top: 10px;
-        right: 10px;
         z-index: 1001;
+        margin-right: 20px;
     }
 
     .navbar {
@@ -548,12 +546,12 @@ header {
         top: 100%;
         left: 0;
         width: 100vw;
-        background: rgba(51, 51, 51, 0.95);
+        background: rgba(255, 255, 255, 0.849);
         overflow: hidden;
-        max-height: 0; /* Começa com altura 0 */
+        height: 0;
         opacity: 0;
         pointer-events: none;
-        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -562,26 +560,20 @@ header {
     }
 
     .navbar.open {
-        max-height: 500px; /* Permite que o menu se expanda até uma altura razoável */
+        height: auto;
         opacity: 1;
         pointer-events: auto;
     }
 
     .navbar a {
         display: block;
-        padding: 10px 0; /* Maior espaço entre os links */
-        color: #6A1B9A;
-        text-decoration: none;
+        padding: 8px 0;
+        color: #F8A836;
         font-weight: 600;
         font-size: 1rem;
-        transition: color 0.3s;
-        text-align: right; /* Alinha o texto à direita */
+        text-align: right;
         width: 100%;
         max-width: 200px;
-    }
-
-    .navbar a:hover {
-        color: #F8A836;
     }
 
     .about {
@@ -590,7 +582,7 @@ header {
     }
 
     .welcome h1 {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .image-card {
