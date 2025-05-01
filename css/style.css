@@ -483,6 +483,7 @@ header {
     background-color: #6A1B9A;
     color: #fff;
     padding: 20px;
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -490,11 +491,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
 }
 
 .footer-mobile-content img {
     max-width: 80px;
+    transform: translateY(15px);
 }
 
 .footer-mobile-social {
