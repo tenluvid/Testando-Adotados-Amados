@@ -589,8 +589,11 @@ header {
     }
       
     .welcome h1 {
-        font-size: 1.8rem; /* Reduz o tamanho da fonte em celulares */
-        white-space: nowrap;
+        font-size: min(6vw, 24px); /* Ajusta automaticamente sem ultrapassar um tamanho máximo */
+        white-space: nowrap; /* Impede a quebra do texto */
+        overflow: hidden; /* Evita que ultrapasse os limites */
+        text-align: center; /* Centraliza o título */
+        max-width: 90vw;
     }
       
     .welcome p {
