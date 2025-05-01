@@ -145,7 +145,6 @@ header {
     color: #6A1B9A;
     font-family: var(--font-adotado);
     text-align: center;
-    white-space: normal;
 }
 
 .home .welcome p{
@@ -584,18 +583,14 @@ header {
     }
 
     .welcome {
+        width: 100%;
         padding: 100px 1rem 0;
         text-align: center;
     }
       
     .welcome h1 {
-        font-size: calc(1.8em + 2vw); /* Tamanho de fonte responsivo */
-        margin-bottom: 10px; /* Ajusta o espaçamento */
-        padding: 0 10px; /* Reduz o padding nas laterais */
-        text-align: center; /* Centraliza o título */
-        white-space: normal; /* Garante que o título não quebre de forma forçada */
-        overflow: hidden; /* Oculta o que ultrapassar o limite */
-        max-width: 100%;
+        font-size: 1.8rem; /* Reduz o tamanho da fonte em celulares */
+        white-space: nowrap;
     }
       
     .welcome p {
