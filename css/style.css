@@ -144,6 +144,8 @@ header {
     margin-bottom: 20px;
     color: #6A1B9A;
     font-family: var(--font-adotado);
+    text-align: center;
+    white-space: normal;
 }
 
 .home .welcome p{
@@ -581,39 +583,25 @@ header {
         text-align: center;
     }
 
-    .home .welcome {
+    .welcome {
         padding: 100px 1rem 0;
         text-align: center;
-        width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
-        box-sizing: border-box; /* Inclui o padding nas dimensões do elemento */
     }
-
-    .home .welcome h1 {
-        font-size: calc(1.8em + 2vw); /* Ajusta o tamanho da fonte com base na largura da tela */
-        margin: 0 auto;
-        padding: 0 15px;
-        color: #6A1B9A;
-        font-family: var(--font-adotado);
-        white-space: normal; /* Permite que o texto quebre em várias linhas */
-        overflow: visible;
-        max-width: 90%; /* Garante que o título não ultrapasse 90% da largura do contêiner */
+      
+    .welcome h1 {
+        font-size: calc(1.8em + 2vw); /* Tamanho de fonte responsivo */
+        margin-bottom: 10px; /* Ajusta o espaçamento */
+        padding: 0 10px; /* Reduz o padding nas laterais */
+        text-align: center; /* Centraliza o título */
+        white-space: normal; /* Garante que o título não quebre de forma forçada */
+        overflow: hidden; /* Oculta o que ultrapassar o limite */
+        max-width: 100%;
     }
-
-    .home .welcome p {
+      
+    .welcome p {
         font-size: 1rem;
         padding: 0 15px;
-        margin-top: 10px;
-        line-height: 1.6;
-        max-width: 90%; /* Garante que o texto do parágrafo não ultrapasse a largura do contêiner */
-        margin-left: auto;
-        margin-right: auto; /* Centraliza o texto */
-    }
-
-    .home .welcome p span {
-        text-decoration: underline;
-        text-decoration-color: #6A1B9A;
-        text-underline-offset: 4px;
-        text-decoration-thickness: 2px;
+        margin-top: 10px; 
     }
 
     .image-card {
