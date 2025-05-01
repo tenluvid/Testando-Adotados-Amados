@@ -583,25 +583,9 @@ header {
     }
 
     .welcome {
-        width: 100%;
-        padding: 100px 1rem 0;
-        text-align: center;
+        padding-top: 100px;
     }
-      
-    .welcome h1 {
-        font-size: min(6vw, 24px); /* Ajusta automaticamente sem ultrapassar um tamanho máximo */
-        white-space: nowrap; /* Impede a quebra do texto */
-        overflow: hidden; /* Evita que ultrapasse os limites */
-        text-align: center; /* Centraliza o título */
-        max-width: 90vw;
-    }
-      
-    .welcome p {
-        font-size: 1rem;
-        padding: 0 15px;
-        margin-top: 10px; 
-    }
-
+    
     .image-card {
         width: 100%;
         height: auto;
