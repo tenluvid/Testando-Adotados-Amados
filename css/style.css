@@ -585,18 +585,33 @@ header {
     .welcome {
         padding-top: 100px;
     }
-    
+
     .image-card {
         width: 100%;
         height: auto;
     }
 
-    .footer {
-        display: none;
+.footer {
+        display: none; /* Esconde o footer para telas pequenas */
     }
 
     .footer-mobile {
-        display: block;
+        display: block; /* Exibe o footer mobile */
+    }
+
+    .footer-mobile-content {
+        margin-bottom: 15px;
+    }
+
+    .footer-mobile-social {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .footer-mobile-social a {
+        font-size: 18px;
     }
 
     .card-section {
