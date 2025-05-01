@@ -597,11 +597,15 @@ header {
     }
 
     .welcome {
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
     .welcome h1 {
-        white-space: nowrap;
+        font-size: min(5vw, 20px); /* Reduz um pouco o tamanho do título para caber melhor */
+        white-space: nowrap; /* Mantém o texto em uma única linha */
+        max-width: 90vw; /* Evita ultrapassar a largura da tela */
+        margin: 40px auto;
+        text-align: center
     }
 
     .image-card {
