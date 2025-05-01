@@ -507,7 +507,7 @@ header {
 }
 
 .footer-mobile-social a {
-    font-size: 36px;
+    font-size: 24px;
     color: #fff;
     transition: color 0.3s;
 }
@@ -621,12 +621,8 @@ header {
     .footer-mobile-social {
         display: flex;
         justify-content: center;
-        gap: 12px;
+        gap: 20px;
         margin-top: 10px;
-    }
-
-    .footer-mobile-social a {
-        font-size: 18px;
     }
 
     .card-section {
