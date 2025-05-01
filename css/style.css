@@ -587,13 +587,17 @@ header {
     }
       
     .welcome h1 {
-        font-size: 6vw;
+        font-size: 1.8em;
+        margin: 0 auto;
+        padding: 0 15px;
         white-space: nowrap;
-        overflow: hidden;
+        overflow: visible;
     }
       
     .welcome p {
-        margin-top: 1rem;
+        font-size: 1rem;
+        padding: 0 15px;
+        margin-top: 10px; 
     }
 
     .image-card {
