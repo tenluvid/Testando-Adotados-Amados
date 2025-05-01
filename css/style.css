@@ -507,57 +507,67 @@ header {
     color: #F8A836;
 }
 
+.menu-toggle {
+    display: none; /* Oculta o botão por padrão */
+}
+
+
 @media (max-width: 768px) {
-    /* Ajustes gerais */
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem;
-    }
+        header {
+            display: flex;
+            justify-content: space-between; /* Distribui logo à esquerda e menu à direita */
+            align-items: center;
+            padding: 1rem;
+        }
+    
+        .logo {
+            margin-left: 10px; /* Mantém a logo no lado esquerdo */
+        }
+    
+        .menu-toggle {
+            display: block;
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: #6A1B9A;
+            cursor: pointer;
+            position: fixed;
+            top: 10px;
+            right: 10px; /* Agora está na direita */
+            z-index: 999;
+        }
+    
+        .navbar {
+            position: fixed;
+            top: -50vh; /* Oculta a navbar na metade superior da tela */
+            right: 0; /* Agora o menu abre no lado direito */
+            width: 100vw; /* Ocupa toda a largura da tela */
+            height: 50vh; /* Ocupa metade da tela ao abrir */
+            background: rgba(51, 51, 51, 0.8);
+            padding-top: 20px;
+            transition: top 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; /* Alinha os textos à direita */
+            justify-content: flex-start;
+            text-align: right;
+            opacity: 0; /* Esconde inicialmente */
+            visibility: hidden; /* Evita interação antes de abrir */
+        }
+    
+        .navbar a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+    
+        .navbar.open {
+            top: 0; /* Faz o menu aparecer na metade superior da tela */
+            opacity: 1;
+            visibility: visible;
+        }
 
-    .logo img {
-        height: 80px;
-    }
-
-    .navbar {
-        position: fixed;
-        left: -250px; /* Oculta o menu à esquerda */
-        top: 0;
-        width: 250px;
-        height: 100%;
-        background: #333;
-        padding-top: 20px;
-        transition: left 0.3s ease-in-out;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-    }
-
-    .navbar a {
-        display: block;
-        padding: 15px;
-        color: white;
-        text-decoration: none;
-    }
-
-    .menu-toggle {
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 999;
-    }
-
-    .navbar.open {
-        left: 0; /* Exibe o menu ao ser aberto */
-    }
-
-    /* Ajustes para seções */
     .about {
         flex-direction: column;
         text-align: center;

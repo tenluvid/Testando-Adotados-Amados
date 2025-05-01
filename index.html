@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,9 +203,16 @@
 </footer>
 <script>
     function toggleMenu() {
-        var navbar = document.querySelector(".navbar");
+    var navbar = document.querySelector(".navbar");
+    var menuToggle = document.querySelector(".menu-toggle");
+
+    if (navbar) {  
         navbar.classList.toggle("open");
+        menuToggle.classList.toggle("active"); // Isso pode ajudar com animações futuras
+    } else {
+        console.error("Elemento .navbar não encontrado!");
     }
+}
 </script>
 </body>
 </html>
