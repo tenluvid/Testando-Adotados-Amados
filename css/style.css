@@ -583,6 +583,7 @@ header {
 
     .welcome h1 {
         padding-top: 100px;
+        font-size: 2rem;
         white-space: nowrap;
     }
 
