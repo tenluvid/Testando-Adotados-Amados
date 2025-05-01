@@ -495,7 +495,7 @@ header {
 
 .footer-mobile-content img {
     max-width: 80px;
-    transform: translateY(15px);
+    transform: translateY(20px);
 }
 
 .footer-mobile-social {
