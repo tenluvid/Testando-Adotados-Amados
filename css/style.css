@@ -525,60 +525,64 @@ header {
         justify-content: space-between;
         align-items: center;
     }
-    
-        .logo {
-            margin-left: 10px; /* Mantém a logo no lado esquerdo */
-        }
-    
-        .menu-toggle {
-            display: block;
-            font-size: 30px;
-            background: none;
-            border: none;
-            color: #6A1B9A;
-            cursor: pointer;
-            position: fixed;
-            top: 10px;
-            right: 10px; /* Agora está na direita */
-            z-index: 999;
-        }
-    
-        .navbar {
-            position: absolute;
-            top: 100%; /* Faz o menu surgir abaixo da header */
-            left: 0;
-            width: 100vw;
-            height: 0; /* Inicialmente oculto */
-            background: rgba(51, 51, 51, 0.8);
-            overflow: hidden;
-            transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            opacity: 0;
-            visibility: hidden;
-            display: flex;
-            flex-direction: column; /* Organiza os textos em coluna (vertical) */
-            align-items: flex-end;
-            text-align: right;
-        }
 
-        header:hover + .navbar {
-            height: 50vh; /* Expande ao passar o dedo sobre a header */
-            opacity: 1;
-            visibility: visible;
-        }
-    
-        .navbar a {
-            display: block;
-            padding: 15px;
-            color: #333333;
-            text-decoration: none;
-        }
-    
-        .navbar.open {
-            height: 50vh; /* Expande ao abrir */
-            opacity: 1;
-            visibility: visible;
-        }
+    .logo {
+        margin-left: 10px; /* Mantém a logo no lado esquerdo */
+    }
 
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: #6A1B9A;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1001;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background: rgba(51, 51, 51, 0.95);
+        overflow: hidden;
+        max-height: 0; /* Começa com altura 0 */
+        opacity: 0;
+        pointer-events: none;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        padding-right: 1.5rem;
+    }
+
+    .navbar.open {
+        max-height: 500px; /* Permite que o menu se expanda até uma altura razoável */
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px 0; /* Maior espaço entre os links */
+        color: #6A1B9A;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: color 0.3s;
+        text-align: right; /* Alinha o texto à direita */
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .navbar a:hover {
+        color: #F8A836;
+    }
 
     .about {
         flex-direction: column;

@@ -203,18 +203,8 @@
 </footer>
 <script>
 function toggleMenu() {
-    var navbar = document.querySelector(".navbar");
-    var menuToggle = document.querySelector(".menu-toggle");
-    var closeMenu = document.querySelector(".close-menu");
-
+    const navbar = document.querySelector(".navbar");
     navbar.classList.toggle("open");
-
-    // Exibe ou oculta o botão de fechar corretamente
-    if (navbar.classList.contains("open")) {
-        closeMenu.style.display = "block";
-    } else {
-        closeMenu.style.display = "none";
-    }
 }
 </script>
 </body>
