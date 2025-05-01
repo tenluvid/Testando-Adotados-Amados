@@ -497,7 +497,7 @@ header {
     max-width: 80px; /* Ajusta o tamanho da logo */
     margin: 0; /* Remove margens extras */
     position: relative;
-    top: 15px; /* Move a imagem para baixo */
+    top: 12px; /* Move a imagem para baixo */
 }
 
 .footer-mobile-social {
@@ -598,6 +598,10 @@ header {
 
     .welcome {
         padding-top: 100px;
+    }
+
+    .welcome h1 {
+        white-space: nowrap;
     }
 
     .image-card {
