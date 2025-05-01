@@ -202,15 +202,18 @@
     </div>
 </footer>
 <script>
-    function toggleMenu() {
+function toggleMenu() {
     var navbar = document.querySelector(".navbar");
     var menuToggle = document.querySelector(".menu-toggle");
+    var closeMenu = document.querySelector(".close-menu");
 
-    if (navbar) {  
-        navbar.classList.toggle("open");
-        menuToggle.classList.toggle("active"); // Isso pode ajudar com animações futuras
+    navbar.classList.toggle("open");
+
+    // Exibe ou oculta o botão de fechar corretamente
+    if (navbar.classList.contains("open")) {
+        closeMenu.style.display = "block";
     } else {
-        console.error("Elemento .navbar não encontrado!");
+        closeMenu.style.display = "none";
     }
 }
 </script>

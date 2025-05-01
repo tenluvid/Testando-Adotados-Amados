@@ -513,12 +513,18 @@ header {
 
 
 @media (max-width: 768px) {
-        header {
-            display: flex;
-            justify-content: space-between; /* Distribui logo à esquerda e menu à direita */
-            align-items: center;
-            padding: 1rem;
-        }
+    header {
+        position: fixed; /* Mantém o header fixo no topo */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Garante que fique acima do menu */
+        background: white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     
         .logo {
             margin-left: 10px; /* Mantém a logo no lado esquerdo */
@@ -538,39 +544,49 @@ header {
         }
     
         .navbar {
-            position: fixed;
-            top: -50vh; /* Oculta a navbar na metade superior da tela */
-            right: 0; /* Agora o menu abre no lado direito */
-            width: 100vw; /* Ocupa toda a largura da tela */
-            height: 50vh; /* Ocupa metade da tela ao abrir */
+            position: absolute;
+            top: 100%; /* Faz o menu surgir abaixo da header */
+            left: 0;
+            width: 100vw;
+            height: 0; /* Inicialmente oculto */
             background: rgba(51, 51, 51, 0.8);
-            padding-top: 20px;
-            transition: top 0.3s ease-in-out;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
             display: flex;
-            flex-direction: column;
-            align-items: flex-end; /* Alinha os textos à direita */
-            justify-content: flex-start;
+            flex-direction: column; /* Organiza os textos em coluna (vertical) */
+            align-items: flex-end;
             text-align: right;
-            opacity: 0; /* Esconde inicialmente */
-            visibility: hidden; /* Evita interação antes de abrir */
+        }
+
+        header:hover + .navbar {
+            height: 50vh; /* Expande ao passar o dedo sobre a header */
+            opacity: 1;
+            visibility: visible;
         }
     
         .navbar a {
             display: block;
             padding: 15px;
-            color: white;
+            color: #333333;
             text-decoration: none;
         }
     
         .navbar.open {
-            top: 0; /* Faz o menu aparecer na metade superior da tela */
+            height: 50vh; /* Expande ao abrir */
             opacity: 1;
             visibility: visible;
         }
 
+
     .about {
         flex-direction: column;
         text-align: center;
+    }
+
+    .welcome h1 {
+        padding-top: 50px;
     }
 
     .image-card {
@@ -599,5 +615,14 @@ header {
 
     .title_cards h1 {
         font-size: 2rem;
+    }
+
+    .caption {
+        transform: translateY(0) !important; /* Mantém a legenda visível sempre */
+        transition: none !important; /* Remove a animação */
+    }
+
+    .image-card:hover .caption {
+        transform: translateY(0); /* Impede que a legenda deslize */
     }
 }
