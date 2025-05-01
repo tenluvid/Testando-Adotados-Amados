@@ -583,7 +583,7 @@ header {
 
     .welcome h1 {
         padding-top: 100px;
-        font-size: 2rem;
+        font-size: 1.8rem; /* ou 28px por exemplo */
         white-space: nowrap;
     }
 
